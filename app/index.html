@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0078d7, #00bfa5);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      transform: scale(0.95);
+      transition: transform 0.4s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      font-size: 1rem;
+      color: #0078d7;
+      background: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #0078d7;
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Deployed via Jenkins on AWS ECS Fargate</h1>
+    <p>CI/CD automation at its best — powered by DevOps & Cloud Engineering.</p>
+    <a href="#" class="button">Learn More</a>
+  </div>
+  <footer>© 2025 My DevOps Website | Built with ❤️ by Jithendar</footer>
+</body>
+</html>
